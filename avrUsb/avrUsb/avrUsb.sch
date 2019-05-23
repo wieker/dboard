@@ -78,10 +78,6 @@ F 3 "~" H 4350 2950 50  0001 C CNN
 	1    4350 2950
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2000 2950 4200 2950
-Wire Wire Line
-	2000 2850 3250 2850
 $Comp
 L avrUsb-rescue:ATmega8U2-AU-MCU_Microchip_ATmega U1
 U 1 1 5BC9A81C
@@ -315,9 +311,9 @@ F 3 "~" H 5050 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5050 1400 5050 1650
+	5050 1400 5050 1500
 Wire Wire Line
-	5050 1950 5050 2250
+	5050 1950 5050 2100
 Wire Wire Line
 	7150 2050 7150 1900
 Wire Wire Line
@@ -647,4 +643,56 @@ Wire Wire Line
 	5050 3050 5050 2950
 Wire Wire Line
 	5050 2950 5250 2950
+$Comp
+L Connector:Screw_Terminal_01x03 J4
+U 1 1 5CE71C0B
+P 4600 2100
+F 0 "J4" H 4520 1775 50  0000 C CNN
+F 1 "Screw_Terminal_01x03" H 4520 1866 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-3-2.54_1x03_P2.54mm_Horizontal" H 4600 2100 50  0001 C CNN
+F 3 "~" H 4600 2100 50  0001 C CNN
+	1    4600 2100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4800 2100 5050 2100
+Connection ~ 5050 2100
+Wire Wire Line
+	5050 2100 5050 2250
+Wire Wire Line
+	5050 1500 4800 1500
+Wire Wire Line
+	4800 1500 4800 2000
+Connection ~ 5050 1500
+Wire Wire Line
+	5050 1500 5050 1650
+$Comp
+L power:GND #PWR016
+U 1 1 5CE7BBCA
+P 4800 2250
+F 0 "#PWR016" H 4800 2000 50  0001 C CNN
+F 1 "GND" H 4805 2077 50  0000 C CNN
+F 2 "" H 4800 2250 50  0001 C CNN
+F 3 "" H 4800 2250 50  0001 C CNN
+	1    4800 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 2200 4800 2250
+Wire Wire Line
+	2000 2850 2950 2850
+Wire Wire Line
+	2950 2850 2950 2600
+Wire Wire Line
+	2950 2600 3800 2600
+Wire Wire Line
+	3800 2600 3800 2950
+Wire Wire Line
+	3800 2950 4200 2950
+Wire Wire Line
+	2000 2950 3100 2950
+Wire Wire Line
+	3100 2950 3100 2850
+Wire Wire Line
+	3100 2850 3250 2850
 $EndSCHEMATC
