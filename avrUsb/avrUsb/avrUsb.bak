@@ -79,17 +79,6 @@ F 3 "~" H 4350 2950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L avrUsb-rescue:ATmega8U2-AU-MCU_Microchip_ATmega U1
-U 1 1 5BC9A81C
-P 5950 3350
-F 0 "U1" H 5950 1864 50  0000 C CNN
-F 1 "ATmega8U2-AU" H 5950 1773 50  0000 C CNN
-F 2 "QFP:TQFP-32_7x7mm_P0.8mm" H 5950 3350 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc7799.pdf" H 5950 3350 50  0001 C CNN
-	1    5950 3350
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR07
 U 1 1 5BC9AC0A
 P 5850 5350
@@ -584,15 +573,7 @@ Wire Wire Line
 Wire Wire Line
 	7550 3550 7550 3600
 Wire Wire Line
-	6650 3750 7050 3750
-Wire Wire Line
-	7050 3750 7050 3700
-Wire Wire Line
 	7050 3700 7550 3700
-Wire Wire Line
-	6650 3850 7200 3850
-Wire Wire Line
-	7200 3850 7200 3800
 Wire Wire Line
 	7200 3800 7550 3800
 Wire Wire Line
@@ -695,4 +676,25 @@ Wire Wire Line
 	3100 2950 3100 2850
 Wire Wire Line
 	3100 2850 3250 2850
+$Comp
+L MCU_Microchip_ATmega:ATmega32U2-MU U1
+U 1 1 5D3054B2
+P 5950 3350
+F 0 "U1" H 5950 1864 50  0000 C CNN
+F 1 "ATmega32U2-MU" H 5950 1773 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-32-1EP_5x5mm_P0.5mm_EP3.1x3.1mm" H 5950 3350 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc7799.pdf" H 5950 3350 50  0001 C CNN
+	1    5950 3350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 3800 7200 3950
+Wire Wire Line
+	6650 3950 7200 3950
+Wire Wire Line
+	6650 3850 7050 3850
+Wire Wire Line
+	7050 3700 7050 3850
+Wire Wire Line
+	6650 3750 6650 3650
 $EndSCHEMATC
